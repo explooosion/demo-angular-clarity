@@ -9,12 +9,14 @@ import { HomeComponent } from './routes/home/home.component';
 
 import { AppComponent } from './app.component';
 import { AlertComponent } from './components/alert/alert.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AlertComponent,
-    HomeComponent
+    HomeComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
