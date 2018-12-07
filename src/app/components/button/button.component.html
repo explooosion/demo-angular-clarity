@@ -1,25 +1,76 @@
 <div class="main-container">
   <header class="header-6">
     <div class="branding">
-      <a href="/" class="logo-and-title">
+      <a routerLink="/" class="logo-and-title">
         <clr-icon shape="home" class="is-solid" size="24"></clr-icon>
         <span class="title">Angular Clarity</span>
       </a>
     </div>
     <div class="header-nav">
-      <a href="/" class="active nav-link nav-text">Home</a>
+      <a routerLink="/" class="active nav-link nav-text">Home</a>
     </div>
   </header>
   <div class="content-container">
     <div class="content-area">
 
-      <!-- solid -->
+      <h4>Solid Buttons</h4>
       <button class="btn btn-primary">Primary</button>
       <button class="btn btn-success">Success</button>
       <button class="btn btn-warning">Warning</button>
       <button class="btn btn-danger">Danger</button>
       <button class="btn btn-danger" disabled>Disabled</button>
 
+      <h4>Outline Buttons</h4>
+      <button class="btn btn-outline">Regular</button>
+      <button class="btn btn-success-outline">Success-Outline</button>
+      <button class="btn btn-info-outline">Info</button>
+      <button class="btn btn-warning-outline">Warning</button>
+      <button class="btn btn-danger-outline">Danger</button>
+      <button class="btn btn-outline" disabled>Disabled</button>
+
+      <h4>Flat Buttons</h4>
+      <button class="btn btn-link">Regular</button>
+      <button class="btn btn-link" disabled>Disabled</button>
+      <button class="btn btn-sm btn-link">Regular</button>
+      <button class="btn btn-sm btn-link" disabled>Disabled</button>
+
+      <h4>Small</h4>
+      <button class="btn btn-sm">Regular</button>
+      <button class="btn btn-primary btn-sm">Primary</button>
+      <button class="btn btn-success btn-sm">Success</button>
+      <button class="btn btn-info btn-sm">Info</button>
+      <button class="btn btn-warning btn-sm">Warning</button>
+      <button class="btn btn-danger btn-sm">Danger</button>
+      <button class="btn btn-sm" disabled>Disabled</button>
+
+      <h4>Block</h4>
+      <button class="btn btn-primary btn-block">Primary</button>
+      <button class="btn btn-success btn-block">Success</button>
+
+      <h4>Icon Buttons</h4>
+      <button type="button" class="btn btn-icon">
+        <clr-icon shape="home"></clr-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-primary">
+        <clr-icon shape="cog"></clr-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-warning">
+        <clr-icon shape="warning-standard"></clr-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-danger">
+        <clr-icon shape="error-standard"></clr-icon>
+      </button>
+      <button type="button" class="btn btn-icon btn-success">
+        <clr-icon shape="check"></clr-icon>
+      </button>
+      <button type="button" class="btn btn-icon" disabled>
+        <clr-icon shape="home"></clr-icon>
+      </button>
+
+      <h4>Loading Buttons</h4>
+      <button [clrLoading]="validateBtnState" class="btn btn-info-outline" (click)="validateDemo()">Validate</button>
+      <button [clrLoading]="validateBtnStateError" class="btn btn-danger-outline" (click)="validateErrorDemo()">Validate</button>
+      <button [clrLoading]="submitBtnState" type="submit" class="btn btn-success-outline" (click)="submitDemo()">Submit</button>
 
     </div>
   </div>
