@@ -1,4 +1,17 @@
 <div class="main-container">
+
+  <!-- Show on header -->
+  <clr-alert [clrAlertType]="'danger'" [clrAlertAppLevel]="true">
+    <clr-alert-item>
+      <span class="alert-text">
+        This is an app level alert.
+      </span>
+      <div class="alert-actions">
+        <button class="btn alert-action">Fix</button>
+      </div>
+    </clr-alert-item>
+  </clr-alert>
+
   <header class="header-6">
     <div class="branding">
       <a routerLink="/" class="logo-and-title">
@@ -13,40 +26,97 @@
   <div class="content-container">
     <div class="content-area">
 
-      <!-- alert -->
-      <div class="alert alert-primary">
-        <div class="alert-items">
-          <div class="alert-item static" role="alert">
-            <div class="alert-icon-wrapper">
-              <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
-            </div>
-            <span class="alert-text">
-              This is an alert with 36px height.
-            </span>
+      <h4>clrAlertClosable</h4>
+      <clr-alert [clrAlertClosable]="false">
+        <clr-alert-item>
+          <span class="alert-text">
+            This alert cannot be dismissed.
+          </span>
+          <div class="alert-actions">
+            <clr-dropdown>
+              <button class="dropdown-toggle" clrDropdownTrigger>
+                Actions
+                <clr-icon shape="caret down"></clr-icon>
+              </button>
+              <clr-dropdown-menu clrPosition="bottom-right">
+                <a href="#" class="dropdown-item" clrDropdownItem>Shutdown</a>
+                <a href="#" class="dropdown-item" clrDropdownItem>Delete</a>
+                <a href="#" class="dropdown-item" clrDropdownItem>Reboot</a>
+              </clr-dropdown-menu>
+            </clr-dropdown>
           </div>
-        </div>
-        <button type="button" class="close" aria-label="Close">
-          <clr-icon aria-hidden="true" shape="close"></clr-icon>
-        </button>
-      </div>
+        </clr-alert-item>
+      </clr-alert>
+      <clr-alert [clrAlertType]="'warning'">
+        <clr-alert-item>
+          <span class="alert-text">
+            Try closing this alert.
+          </span>
+        </clr-alert-item>
+      </clr-alert>
 
-      <!-- alert danger -->
-      <div class="alert alert-danger">
-        <div class="alert-items">
-          <div class="alert-item static" role="alert">
-            <div class="alert-icon-wrapper">
-              <clr-icon class="alert-icon" shape="exclamation-circle"></clr-icon>
-            </div>
-            <span class="alert-text">
-              This is an alert with 36px height.
-            </span>
+      <h4>clrAlertType</h4>
+      <clr-alert [clrAlertType]="'success'">
+        <clr-alert-item>
+          <span class="alert-text">
+            This alert indicates success.
+          </span>
+        </clr-alert-item>
+      </clr-alert>
+      <clr-alert>
+        <clr-alert-item>
+          <span class="alert-text">
+            This is a default info alert.
+          </span>
+        </clr-alert-item>
+      </clr-alert>
+
+
+      <h4>Binding Event</h4>
+      <clr-alert [clrAlertType]="'success'" (clrAlertClosedChange)="onClose()">
+        <clr-alert-item>
+          <span class="alert-text">
+            This alert indicates a success!
+          </span>
+        </clr-alert-item>
+      </clr-alert>
+      <div>{{closeMessage}}</div>
+
+      <h4>clrAlertAppLevel</h4>
+      <clr-alert [clrAlertType]="'danger'" [clrAlertAppLevel]="true">
+        <clr-alert-item>
+          <span class="alert-text">
+            This is an app level alert.
+          </span>
+          <div class="alert-actions">
+            <button class="btn alert-action">Fix</button>
           </div>
-        </div>
-        <button type="button" class="close" aria-label="Close">
-          <clr-icon aria-hidden="true" shape="close"></clr-icon>
-        </button>
-      </div>
+        </clr-alert-item>
+      </clr-alert>
 
+      <h4>Multiple app level alerts </h4>
+      <clr-alerts>
+        <clr-alert [clrAlertType]="'info'" [clrAlertAppLevel]="true">
+          <clr-alert-item>
+            <span class="alert-text">
+              This is the first app level alert.
+            </span>
+            <div class="alert-actions">
+              <button class="btn alert-action">Fix</button>
+            </div>
+          </clr-alert-item>
+        </clr-alert>
+        <clr-alert [clrAlertType]="'danger'" [clrAlertAppLevel]="true">
+          <clr-alert-item>
+            <span class="alert-text">
+              This is a second app level alert.
+            </span>
+            <div class="alert-actions">
+              <button class="btn alert-action">Fix</button>
+            </div>
+          </clr-alert-item>
+        </clr-alert>
+      </clr-alerts>
 
     </div>
   </div>

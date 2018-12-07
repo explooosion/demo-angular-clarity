@@ -3,13 +3,16 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './routes/home/home.component';
 import { AlertComponent } from './components/alert/alert.component';
-import { ButtonComponent } from './components/button/button.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { BadgesComponent } from './components/badges/badges.component';
+import { ButtonGroupComponent } from './components/button-group/button-group.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent,
-    data: { title: 'Clarity - Alert' },
+    data: { title: 'Clarity' },
   },
   {
     path: 'alert',
@@ -17,9 +20,24 @@ const routes: Routes = [
     data: { title: 'Clarity Alert' },
   },
   {
-    path: 'button',
-    component: ButtonComponent,
-    data: { title: 'Clarity Button' },
+    path: 'badges',
+    component: BadgesComponent,
+    data: { title: 'Clarity Badges' },
+  },
+  {
+    path: 'buttons',
+    component: ButtonsComponent,
+    data: { title: 'Clarity Buttons' },
+  },
+  {
+    path: 'button-group',
+    component: ButtonGroupComponent,
+    data: { title: 'Clarity Button Group' },
+  },
+  {
+    path: 'cards',
+    component: CardsComponent,
+    data: { title: 'Clarity Cards' },
   },
   {
     path: '',

@@ -1,0 +1,193 @@
+<div class="main-container">
+  <header class="header-6">
+    <div class="branding">
+      <a routerLink="/" class="logo-and-title">
+        <clr-icon shape="home" class="is-solid" size="24"></clr-icon>
+        <span class="title">Angular Clarity</span>
+      </a>
+    </div>
+    <div class="header-nav">
+      <a routerLink="/" class="active nav-link nav-text">Home</a>
+    </div>
+  </header>
+  <div class="content-container">
+    <div class="content-area">
+
+      <h4>Basic Structure</h4>
+      <div class="btn-group btn-primary">
+        <button class="btn">Add</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Download</button>
+        <button class="btn">Delete</button>
+      </div>
+
+      <h4>Overflow</h4>
+      <div class="btn-group btn-primary">
+        <button class="btn">Add</button>
+        <button class="btn">Edit</button>
+        <div class="btn-group-overflow open">
+          <button class="btn dropdown-toggle">
+            <clr-icon shape="ellipsis-horizontal"></clr-icon>
+          </button>
+          <div class="dropdown-menu">
+            <button class="btn">Download</button>
+            <button class="btn">Delete</button>
+          </div>
+        </div>
+      </div>
+
+      <h4>Color</h4>
+      <div class="btn-group btn-success">
+        <button class="btn">Add</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Download</button>
+        <button class="btn">Delete</button>
+      </div>
+
+      <h4>Outline</h4>
+      <div class="btn-group">
+        <button class="btn">Add</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Download</button>
+        <button class="btn">Delete</button>
+      </div>
+
+      <h4>Flat</h4>
+      <div class="btn-group btn-link">
+        <button class="btn">Add</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Download</button>
+        <button class="btn">Delete</button>
+      </div>
+
+      <h4>Small</h4>
+      <div class="btn-group btn-outline-primary btn-sm">
+        <button class="btn">Add</button>
+        <button class="btn">Edit</button>
+        <button class="btn">Download</button>
+        <button class="btn">Delete</button>
+      </div>
+
+      <h4>Mixed</h4>
+      <div class="btn-group btn-primary">
+        <button class="btn">Favorite</button>
+        <button class="btn btn-success">Add</button>
+        <button class="btn btn-danger">Delete</button>
+      </div>
+
+      <h4>Icons</h4>
+      <div class="btn-group btn-primary btn-icon">
+        <button class="btn">
+          <clr-icon shape="home"></clr-icon>
+          <span class="clr-icon-title">Home</span>
+        </button>
+        <button class="btn">
+          <clr-icon shape="cog"></clr-icon>
+          <span class="clr-icon-title">Settings</span>
+        </button>
+        <div class="btn-group-overflow open">
+          <button class="btn dropdown-toggle">
+            <clr-icon shape="ellipsis-horizontal"></clr-icon>
+          </button>
+          <div class="dropdown-menu">
+            <button class="btn">
+              <clr-icon shape="user"></clr-icon>
+              <span class="clr-icon-title">User</span>
+            </button>
+            <button class="btn">
+              <clr-icon shape="cloud"></clr-icon>
+              <span class="clr-icon-title">Cloud</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h4>With Text</h4>
+      <div class="btn-group btn-primary">
+        <button class="btn">
+          <clr-icon shape="home"></clr-icon>
+          Home
+        </button>
+        <button class="btn">
+          <clr-icon shape="cog"></clr-icon>
+          Settings
+        </button>
+        <div class="btn-group-overflow open">
+          <button class="btn dropdown-toggle">
+            <clr-icon shape="ellipsis-horizontal"></clr-icon>
+          </button>
+          <div class="dropdown-menu">
+            <button class="btn">
+              <clr-icon shape="user"></clr-icon>
+              User
+            </button>
+            <button class="btn">
+              <clr-icon shape="cloud"></clr-icon>
+              Cloud
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <h4>Checkbox</h4>
+      <div class="btn-group">
+        <div class="checkbox btn">
+          <input type="checkbox" id="btn-demo-check-1">
+          <label for="btn-demo-check-1">Apples</label>
+        </div>
+        <div class="checkbox btn">
+          <input type="checkbox" id="btn-demo-check-2" checked>
+          <label for="btn-demo-check-2">Oranges</label>
+        </div>
+        <div class="checkbox btn">
+          <input type="checkbox" id="btn-demo-check-3">
+          <label for="btn-demo-check-3">Kiwis</label>
+        </div>
+        <div class="checkbox btn">
+          <input type="checkbox" id="btn-demo-check-4 checked">
+          <label for="btn-demo-check-4">Pears</label>
+        </div>
+      </div>
+
+      <h4>Radio</h4>
+      <div class="btn-group">
+        <div class="radio btn">
+          <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-1">
+          <label for="btn-demo-radio-1">Apples</label>
+        </div>
+        <div class="radio btn">
+          <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-2">
+          <label for="btn-demo-radio-2">Oranges</label>
+        </div>
+        <div class="radio btn">
+          <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-3">
+          <label for="btn-demo-radio-3">Kiwis</label>
+        </div>
+        <div class="radio btn">
+          <input type="radio" name="btn-group-demo-radios" id="btn-demo-radio-4" checked>
+          <label for="btn-demo-radio-4">Pears</label>
+        </div>
+      </div>
+
+      <h4>clrInMenu</h4>
+      <clr-button-group class="btn-primary">
+        <clr-button>Create</clr-button>
+        <clr-button>Favorite</clr-button>
+        <clr-button [clrInMenu]="true">Assign</clr-button>
+        <clr-button [clrInMenu]="true">Download</clr-button>
+        <clr-button [clrInMenu]="true">Delete</clr-button>
+      </clr-button-group>
+
+      <h4>Menu Directions</h4>
+      <clr-button-group [clrMenuPosition]="'top-right'">
+        <clr-button class="btn">Add</clr-button>
+        <clr-button class="btn">Edit</clr-button>
+        <clr-button class="btn">Download</clr-button>
+        <clr-button class="btn" [clrInMenu]="true">Assign</clr-button>
+        <clr-button class="btn" [clrInMenu]="true">Move</clr-button>
+        <clr-button class="btn" [clrInMenu]="true">Delete</clr-button>
+      </clr-button-group>
+
+    </div>
+  </div>
+</div>

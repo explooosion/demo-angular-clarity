@@ -5,11 +5,11 @@ import { Title } from '@angular/platform-browser';
 import { ClrLoadingState } from '@clr/angular';
 
 @Component({
-  selector: 'app-button',
-  templateUrl: './button.component.html',
-  styleUrls: ['./button.component.scss']
+  selector: 'app-buttons',
+  templateUrl: './buttons.component.html',
+  styleUrls: ['./buttons.component.scss']
 })
-export class ButtonComponent implements OnInit {
+export class ButtonsComponent implements OnInit {
 
   validateBtnState: ClrLoadingState = ClrLoadingState.DEFAULT;
   validateBtnStateError: ClrLoadingState = ClrLoadingState.DEFAULT;

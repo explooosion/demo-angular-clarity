@@ -9,14 +9,20 @@ import { HomeComponent } from './routes/home/home.component';
 
 import { AppComponent } from './app.component';
 import { AlertComponent } from './components/alert/alert.component';
-import { ButtonComponent } from './components/button/button.component';
+import { ButtonsComponent } from './components/buttons/buttons.component';
+import { BadgesComponent } from './components/badges/badges.component';
+import { ButtonGroupComponent } from './components/button-group/button-group.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 @NgModule({
   declarations: [
+    HomeComponent,
     AppComponent,
     AlertComponent,
-    HomeComponent,
-    ButtonComponent
+    BadgesComponent,
+    ButtonsComponent,
+    ButtonGroupComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

@@ -3,13 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-alert',
-  templateUrl: './alert.component.html',
-  styleUrls: ['./alert.component.scss']
+  selector: 'app-badges',
+  templateUrl: './badges.component.html',
+  styleUrls: ['./badges.component.scss']
 })
-export class AlertComponent implements OnInit {
-
-  closeMessage: String = '';
+export class BadgesComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
@@ -23,7 +21,4 @@ export class AlertComponent implements OnInit {
       });
   }
 
-  onClose() {
-    this.closeMessage = 'The alert has been closed';
-  }
 }
